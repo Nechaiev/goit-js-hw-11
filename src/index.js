@@ -74,19 +74,19 @@ function onLoadMoreBtn() {
 }
 
 function alertImagesFound(data) {
-  Notiflix.Notify.success(`Hooray! We found ${data.totalHits} images.`);
+  Notiflix.Notify.success(`Ура! Ми знайшли  ${data.totalHits} зображень.`, { fontSize: '15px' });
 }
 
 function alertNoEmptySearch() {
-  Notiflix.Notify.failure('The search string cannot be empty. Please specify your search query.');
+  Notiflix.Notify.failure('Рядок пошуку не може бути порожнім. Будь ласка, вкажіть пошуковий запит.', { fontSize: '15px' });
 }
 
 function alertNoImagesFound() {
   Notiflix.Notify.failure(
-    'Sorry, there are no images matching your search query. Please try again.',
+    'Вибачте, немає зображень, які відповідають вашому пошуковому запиту. Будь ласка спробуйте ще раз.', { fontSize: '15px' }
   );
 }
 
 function alertEndOfSearch() {
-  Notiflix.Notify.failure("We're sorry, but you've reached the end of search results.");
+  Notiflix.Notify.failure("Вибачте, але ви досягли кінця результатів пошуку.", { fontSize: '15px' });
 }
