@@ -74,19 +74,19 @@ function onLoadMoreBtn() {
 }
 
 function alertImagesFound(data) {
-  Notiflix.Notify.success(`Ура! Ми знайшли  ${data.totalHits} зображень.`, { fontSize: '15px' });
+  Notiflix.Notify.success(`Ура! Ми знайшли  ${data.totalHits} зображень.`, { fontSize: '15px', timeout: 4000, });
 }
 
 function alertNoEmptySearch() {
-  Notiflix.Notify.failure('Рядок пошуку не може бути порожнім. Будь ласка, вкажіть пошуковий запит.', { fontSize: '15px' });
+  Notiflix.Notify.failure('Рядок пошуку не може бути порожнім. Будь ласка, вкажіть пошуковий запит.', { fontSize: '15px', timeout: 4000, });
 }
 
 function alertNoImagesFound() {
   Notiflix.Notify.failure(
-    'Вибачте, немає зображень, які відповідають вашому пошуковому запиту. Будь ласка спробуйте ще раз.', { fontSize: '15px' }
+    'Вибачте, немає зображень, які відповідають вашому пошуковому запиту. Будь ласка спробуйте ще раз.', { fontSize: '15px', timeout: 4000, }
   );
 }
 
 function alertEndOfSearch() {
-  Notiflix.Notify.failure("Вибачте, але ви досягли кінця результатів пошуку.", { fontSize: '15px' });
+  Notiflix.Notify.failure("Вибачте, але ви досягли кінця результатів пошуку.", { fontSize: '15px', timeout: 4000, });
 }
